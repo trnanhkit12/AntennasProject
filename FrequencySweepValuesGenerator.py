@@ -3,7 +3,7 @@ import numpy as np
 # Takes two ints power0 and power1
 # Returns an array of frequencies that sweep from 10^power0 to 10^power1 with a 
 # given number of points in between 
-def frequencyValues(power0, power1, points):
+def frequencySweepValues(power0, power1, points):
     # Set up result array
     result = np.empty(0)
 
@@ -16,5 +16,5 @@ def frequencyValues(power0, power1, points):
     return result
 
 # Generate values
-vals = frequencyValues(-2, 2, 10)
+vals = frequencySweepValues(-2, 2, 10)
 print(vals)
