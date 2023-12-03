@@ -119,7 +119,7 @@ rm.close()
 # Plot the first graph
 plt.figure(1)
 #plt.scatter(freq_out, dB, marker='o', color='blue', label='Scatter Plot') #scatter plot code
-plt.plot(freq_out, dB)
+plt.semilogx(freq_out, dB)
 plt.title('Graph 1: Gain-frequency')
 plt.xlabel('frequency')
 plt.ylabel('Gain (dB)')
@@ -128,7 +128,7 @@ plt.legend()
 # Plot the second graph
 plt.figure(2)
 # plt.scatter(freq_out, phase_diff, marker='o', color='blue', label='Scatter Plot') #scatter plot code
-plt.plot(freq_out, phase_diff)
+plt.semilogx(freq_out, phase_diff)
 plt.title('Graph 2: Phase-frequency')
 plt.xlabel('frequency')
 plt.ylabel('Phase (degrees)')
